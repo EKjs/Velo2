@@ -1,0 +1,30 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+}
+
+/* 
+.landing-img{
+    
+    z-index: 150;    
+} */
+.landing-img img{
+    width: 100%;
+    height: auto;
+}
+/* .new_gen_bike {
+    background-color: rgb(247, 247, 247);
+    position: absolute;
+    left: 0px;
+    top: 800px;
+    width: 1600px;
+    height: 469px;
+    z-index: 150;
+  }
+   */
