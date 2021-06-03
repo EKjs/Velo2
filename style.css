@@ -1,3 +1,4 @@
+/* Styles applied to the whole document */
 *{
     margin: 0;
     padding: 0;
@@ -10,7 +11,18 @@ body{
     font-family: "Lato";
 }
 
-header nav{
+/* END Styles applied to the whole document */
+
+
+
+/* HEADER */
+
+header .bgimg{ /* image inside of the header */
+    width: 100%;
+    height: 100%;
+}
+
+header nav{ /* NavBar inside of the header */
     position: absolute;
     left:50%;
     top:32px;
@@ -34,12 +46,11 @@ nav ul li a {
     color: rgb(77, 73, 89);
     font-weight: bold;
 }
-  
-header .bgimg{
-    width: 100%;
-    height: 100%;
-}
 
+/* END HEADER */
+
+
+/* Section New-gen-bike */
 .new_gen_bike{
     background-color: rgb(247, 247, 247);
     display: flex;
@@ -76,6 +87,9 @@ h2{
     line-height: 1.2;
 }
 
+/* END Section New-gen-bike */
+
+/* flex column 1/3 2/3 3/3 */
 .flexcoloumn-three-thirds{
     display: flex;
     width: 100%;
@@ -85,6 +99,14 @@ h2{
     position: relative;
     flex-basis: 66.66%;
 }
+
+.flexcoloumn-one-third{
+    flex-basis: 33.33%;
+    position: relative;
+}
+/* END flex column 1/3 2/3 3/3 */
+
+/* images or image containers  */
 .big-image{
     position: relative;
     width: 100%;
@@ -99,10 +121,7 @@ h2{
     flex-direction: column;
     align-items: center;
 }
-.flexcoloumn-one-third{
-    flex-basis: 33.33%;
-    position: relative;
-}
+
 .cardcontainer{
     background-color: rgb(255, 255, 255);
     display: flex;
@@ -152,6 +171,20 @@ h2{
     font-family: 'Lato Hairline';
 }
 .shop{
+    width: 100%;
+    display: flex;
+}
+.shopitem .shop-now-text{
+    opacity: 0;
+}
+.shopitem:hover .itemimage{
+    opacity: 0.5;
+}
+.shopitem:hover .shop-now-text{
+    opacity: 1;
+} 
+
+.tworow a,.tworow a{
     width: 100%;
     display: flex;
 }
