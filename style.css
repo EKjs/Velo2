@@ -97,7 +97,7 @@ nav ul li a{
     align-items: center;
 }
 
-.newgen{
+.newgen{/* also affects text in twitter */
     margin: 120px 0;
     display: flex;
     flex-direction: column;
@@ -201,6 +201,26 @@ nav ul li a{
 }
 .thin-text{
     font-family: 'Lato Hairline';
+}
+
+.circle-area{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-bottom: 3rem;
+    width: 70px;
+}
+
+.circle {
+    border-radius: 50%;
+    border: 1px solid rgb(200, 200, 200);
+    background-color: rgb(247, 247, 247);
+    width: 11px;
+    height: 11px;
+}
+
+.cir-active{
+    background-color: rgb(169, 175, 179);
 }
 /* END Twitter SECTION */
 
