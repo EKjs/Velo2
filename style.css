@@ -7,24 +7,270 @@
 body{
     display: flex;
     flex-direction: column;
+    font-family: "Lato";
 }
 
-/* 
-.landing-img{
-    
-    z-index: 150;    
-} */
-.landing-img img{
+header nav{
+    position: absolute;
+    left:50%;
+    top:32px;
+    transform: translateX(-50%);
+}
+
+nav ul{
+    width: 650px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    list-style: none;
+}
+
+nav ul li,
+nav ul li a {
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 13px;
+    font-family: "Lato";
+    color: rgb(77, 73, 89);
+    font-weight: bold;
+}
+  
+header .bgimg{
+    width: 100%;
+    height: 100%;
+}
+
+.new_gen_bike{
+    background-color: rgb(247, 247, 247);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.newgen{
+    margin: 120px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 60%;
+    height: 200px;
+    justify-content:space-between;
+}
+.textcard p{
+    text-align: justify;
+    text-justify: inter-word;
+    line-height: 1.9;
+    color: rgb(132, 135, 137);
+    font-size: 18px;
+}
+.text-align-center p{
+    text-align: center;
+}
+h2{
+    color: rgb(53, 55, 56);
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 18px;
+    font-family: "Lato";
+    letter-spacing: 2px;
+    line-height: 1.2;
+}
+
+.flexcoloumn-three-thirds{
+    display: flex;
+    width: 100%;
+}
+
+.flexcoloumn-two-thirds{
+    position: relative;
+    flex-basis: 66.66%;
+}
+.big-image{
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+.small-icon{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.flexcoloumn-one-third{
+    flex-basis: 33.33%;
+    position: relative;
+}
+.cardcontainer{
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.undercard{
     width: 100%;
     height: auto;
 }
-/* .new_gen_bike {
+.card{
+    margin: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:space-between;
+    flex-grow: 3;
+}
+.card hr {
+    color: rgba(53, 55, 56, 0.2);
+    width: 50px;
+    height: 1px;
+}
+.twitter{
     background-color: rgb(247, 247, 247);
-    position: absolute;
-    left: 0px;
-    top: 800px;
-    width: 1600px;
-    height: 469px;
-    z-index: 150;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.twitter p{
+    font-size: 24px;
+    font-family: "Lato";
+    color: rgb(132, 135, 137);
+    font-style: italic;
+    line-height: 1.4;
+    text-align: center;
+}
+.twitter h2{
+    font-size: 18px;
+    font-family: "Lato";
+    color: rgb(53, 55, 56);
+    font-weight: bold;
+    line-height: 1.2;
+    text-align: center;
+}
+.thin-text{
+    font-family: 'Lato Hairline';
+}
+.shop{
+    width: 100%;
+    display: flex;
+}
+
+.tworow{
+    display: flex;
+    flex-basis:33.33%;
+}
+.twocol{
+    display: flex;
+    flex-direction: column;
+    flex-basis:33.33%;
+}
+
+h6{
+    color: white;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 10px;
+    font-family: "Lato";
+    letter-spacing: 2px;
+    line-height: 2rem;
+}
+
+.discover{
+    background-color: rgb(40, 47, 53);
+    height: 200px;
+    display: flex;
+    align-items: center;
+}
+.discover-button{
+    border-color: rgb(255, 255, 255);
+    background-color: rgba(255, 255, 255, 0);
+    border-style: solid;
+    border-width: 1px;
+    width: 302px;
+    height: 52px;
+
+    font-size: 14px;
+    font-family: "Lato";
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    text-transform: uppercase;
+    line-height: 1.2;
+    margin: 70px auto;
+}
+.email{
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.eml-container{
+    margin: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    flex-basis: 200px;
+}
+#eml{
+    font-style: italic;
+    line-height: 1.2;
+    width: 400px;
+    height: 50px;
+    font-size: 20px;
+    font-family: "Lato";
+    color: rgba(146, 146, 146, 0.502);
+    padding: 20px;
+}
+#btnSubscribe {
+    background-color: rgb(100, 194, 158);
+    width: 126px;
+    height: 50px;
+    font-size: 24px;
+    font-family: "Lato";
+    color: white
   }
-   */
+h5{
+    font-size: 24px;
+    font-family: "Lato";
+    color: rgb(132, 135, 137);
+    font-style: italic;
+    line-height: 1.417;
+}
+footer{
+    background-color: rgb(247, 247, 247);
+    height: 250px;
+    width: 100%;
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+}
+footer p{
+    font-size: 16px;
+    font-family: "Lato";
+    color: rgb(132, 135, 137);
+    font-weight: bold;
+    line-height: 1.1;
+    text-align: left;
+    width: 33.33%;
+}
+footer p a{
+    text-decoration: none;
+    color: rgb(132, 135, 137);
+}
+.connect_container{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 150px;
+}
+.footer_logo{
+    width: 33.33%;
+    display: flex;
+    justify-content:flex-end;
+    align-items: center;
+    
+}
+.footer_logo p{
+    text-align: right;
+}
