@@ -5,195 +5,171 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style.css">
-    <title>Velo</title>
+    <link rel="stylesheet" href="./fonts.css">
+    <title>A new generation of vintage bike - VELO</title>
 </head>
-
 <body>
-<!---------------------- HEADER -------------------->
+
+    <!------------ HEADER ------------>
     <header>
-        <nav>
-            <ul>
-                <li><a href="#about">ABOUT US</a></li>
-                <li><a href="#work">WORK</a></li>
-            </ul>
-        </nav>
-        <div class="logo">
-            <a href="#">
-                <img src="images/Logo.png" alt="logo" />
-            </a>
+        <img src="./images/Layer7.png" class="bgimg" />
+        <div class="menu">
+            <nav>
+                <ul>
+                    <li><a href="#about">about us</a></li>
+                    <li>.</li>
+                    <li><a href="#works">work</a></li>
+                    <li><a href="#"><img src="./images/Logo.png" alt="logo" /></a></li>
+                    <li><a href="#shop">shop</a></li>
+                    <li>.</li>
+                    <li><a href="#contact">contact</a></li>
+                </ul>
+            </nav>
         </div>
-        <nav>
-            <ul>
-                <li><a href="#shop">SHOP</a></li>
-                <li><a href="#contact">CONTACT</a></li>
-            </ul>
-        </nav>
     </header>
+    <!------------ END HEADER ------------>
 
-    <!--------------------------MAIN--------------------->
-    <section class="new_gen_bike">
-        <div>
-            <img src="images/Icon.png" alt="chain_logo" />
+    <!------------ MAIN ------------>
+    <section class="new_gen_bike" id="about"> <!-- IDs for the menu links -->
+        <div class="newgen textcard text-align-center">
+            <img src="./images/Icon.png" alt="chain_logo" />
+            <h2>A new generation of vintage bike</h2>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
         </div>
-        <h1>A NEW GENERATION OF VINTAGE BIKE</h1>
-        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
     </section>
-
-    <!----------------OLIVIA------------>
-    <section>
-        <div class="flexcoloumn_two_thirds">
-            <img class="two_thirds_background" src="images/Layer10.png" alt="brooks handlebar"/>
-            <div>
-                <img src="images/Logo2.png" alt="bicycle_logo" />
+    <!------------ END MAIN ------------>
+    
+    <!------------ OLIVIA ------------>
+    <section class="flexcoloumn-three-thirds" id="works">
+        <div class="flexcoloumn-two-thirds"> <!-- Without this div I cannot center small icon -->
+            <img src="./images/Layer10.png" class="big-image" alt="brooks handlebar" />
+            <div class="small-icon">
+                <img src="./images/Logo2.png" alt="bicycle_logo" />
             </div>
         </div>
-
-        <div class="flexcoloumn_third">
-            <div class="flexrow_upper_twothirds">
-                <img src="images/Icon2.png" alt="bike_frame" />
+        <div class="cardcontainer flexcoloumn-one-third">
+            <div class="card textcard"> <!-- A card with an icon, text and HR -->
+                <img src="./images/Icon2.png" alt="bike_frame" />
                 <h2>VINTAGE OLIVIA</h2>
-                <p>
-                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
-                </p>
-            </div>
-            <div class="flexrow_lower_third">
-                <img src="images/Layer11.png" alt="bike_saddle" />
-            </div>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                <hr/>
+            </div> <!-- !!! TODO: Make an arrow here !!! -->
+            <img src="./images/Layer11.png" class="undercard" alt="bike_saddle" />
         </div>
     </section>
+    <!------------ END OLIVIA ------------>
 
-    <!----------------BORIOSA------------>
-    <section>
-        <div class="flexcoloumn_third">
-            <div class="flexrow_upper_twothirds">
-                <img src="images/Icon4.png" alt="chainring" />
+    <!------------ BORIOSA ------------>
+    <section class="flexcoloumn-three-thirds">
+        <div class="cardcontainer flexcoloumn-one-third">
+            <div class="card textcard">
+                <img src="./images/Icon4.png" alt="chainring" />
                 <h2>LA BORIOSA</h2>
-                <p>
-                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
-                </p>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                <hr/>
             </div>
-            <div class="flexrow_lowerthird">
-                <img src="images/Layer13.png" alt="bike_saddle" />
-            <div>
-        <div>
-
-        <div class="flexcoloumn_two_thirds">
-            <img class="two_thirds_background" src="images/Layer12.png">
-            </div>
-                <img src="images/Logo3.png" alt="vintage_logo" />
+            <img src="./images/Layer13.png" class="undercard" alt="bike_saddle" />
+        </div>
+        <div class="flexcoloumn-two-thirds">
+            <img src="./images/Layer12.png" class="big-image" />
+            <div class="small-icon">
+                <img src="./images/Logo3.png" alt="vintage_logo" />
             </div>
         </div>
-            
     </section>
+    <!------------ END BORIOSA ------------>
 
-    <!----------------HULOT------------>
-    <section>
-        <div class="flexcoloumn_left_third">
-            <img class="third_background" src="images/Layer15.png" alt="bike frame"/>
-            <div>
-                <img src="images/Logo4.png" alt="bicycle_logo_2" />
+    <!------------ HULOT ------------>
+    <section class="flexcoloumn-three-thirds">
+        <div class="flexcoloumn-one-third">
+            <img src="./images/Layer15.png" class="big-image" alt="bike frame" />
+            <div class="small-icon">
+                <img src="./images/Logo4.png" alt="bicycle_logo_2" />
             </div>
         </div>
-
-        <div class="flexcoloumn_middle_third">
-            <div class="flexrow_upper_twothirds">
-                <div>
-                    <img src="images/Icon3.png" alt="bicycle_fork" />
-                </div>
+        <div class="cardcontainer flexcoloumn-one-third">
+            <div class="card textcard">
+                <img src="./images/Icon3.png" alt="bicycle_fork" />
                 <h2>RETRO BIKE - M. HULOT</h2>
-                <p>
-                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
-                </p>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                <hr/>
             </div>
-            <div class="flexrow_lower_third">
-                <img src="images/Layer16.png" alt="bike wheel" />
-            </div>
+            <img src="./images/Layer16.png" class="undercard" alt="bike wheel" />
         </div>
-
-        <div class="flexcoloumn_right_third">
-            <img class="third_background" src="images/Layer14.png" alt="red vintage bike" />
+        <div class="flexcoloumn-one-third">
+            <img src="./images/Layer14.png" class="big-image" alt="red vintage bike" />
         </div>
     </section>
+    <!------------ END HULOT ------------>
 
-    <!----------------NY------------>
-    <section>
-        <div>
-            <img src="images/rs3.png" alt="twitter_logo" />
+    <!------------ TWITTER ------------>
+    <section class="twitter">
+        <div class="newgen">
+            <img src="./images/twitter.png" alt="twitter_logo" />
+            <h2>AOD New York @aod <span class="thin-text">/ 35min</span></h2>
+            <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.</p>        
         </div>
-        <h2>AOD New York @aod / </h2>
-        <h2 class="min"> 35 min</h2>
-        <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.</p>        
     </section>
+    <!------------ END TWITTER ------------>
 
-    <!----------------SHOP------------>
-    <section>
-        <div class="flexcoloumn_left_third">
-            <div class="flexrow_upper_half_shop">
-                <img src="images/Layer19.png" alt="saddle" />
-                <img src="images/Layer21.png" alt="shel wall" />
+    <!------------ SHOP ------------>
+    <section class="shop" id="shop">
+        <div class="twocol"> <!-- Couldn't get it working right with "flexcoloumn-two-thirds" -->
+            <div class="tworow"> <!-- That's why used new class -->
+                <div class="big-image"><img src="./images/Layer19.png" alt="saddle" class="big-image" /> </div>
+                <div class="big-image"><img src="./images/Layer21.png" alt="shel wall" class="big-image" /></div>
             </div>
-            <div class="flexrow_lower_half">
-                <img src="images/Layer20.png" alt="bike frame"/>
-            </div>
+            <div class="big-image"><img src="./images/Layer20.png" alt="bike frame" class="big-image" /></div>
         </div>
-
-        <div class="flexcoloumn_middle_third">
-            <img src="images/Layer22.png" alt="bike back" />
-            <img src="images/Layer25.png" alt="bike frame" />
+        <div class="tworow">
+                <div class="big-image"><img src="./images/Layer22.png" alt="bike back" class="big-image" /></div>
+                <div class="big-image"><img src="./images/Layer25.png" alt="bike frame" class="big-image" /></div>
         </div>
-
-        <div class="flexcoloumn_right_third">
-            <div class="flexrow_upper_half">
-                <img src="images/Layer23.png" alt="bike shop" />
-                <img src="images/Shape13.png" alt="bike shape" />
-            </div>
-            <div class="flexrow_lower_half">
-                <img src="images/Layer24.png" alt="saddle 2"/>
-                <img src="images/Layer26.png" alt="shoulder bag"/>
+        <div class="twocol">
+            <div class="big-image"><img src="./images/Layer23.png" alt="bike shop" class="big-image" /></div>
+            <div class="tworow">
+                <div class="big-image"><img src="./images/Layer24.png" alt="saddle 2" class="big-image" /></div>
+                <div class="big-image"><img src="./images/Layer26.png" alt="shoulder bag" class="big-image" /></div>
             </div>
         </div>
     </section>
+    <!------------ END SHOP ------------>
 
-    <!----------------EMAIL------------>
+    <!------------ BUTTON ------------>
+    <section class="discover">
+        <button id="btnDiscoverShop" class="discover-button">DISCOVER THE SHOP</button>
+    </section>
+    <!------------ END BUTTON ------------>
+
+    <!------------ EMAIL ------------>
     <section class="email">
-        <div class="logo">
-            <a href="#">
-                <img src="images/Logo.png" alt="logo" />
-            </a>
+        <div class="eml-container">
+            <img src="./images/Logo.png" alt="logo" />
+            <h5>Stay on the saddle!</h5>
+            <div class="subscribe">
+                <input type="email" name="eml" id="eml" placeholder="enter your email">
+                <button id="btnSubscribe">GO</button>
+            </div>
         </div>
-        <h2>Stay on the saddle!</h2>
     </section>
+    <!------------ END EMAIL ------------>
 
-<!---------------------- FOOTER -------------------->
-    <footer>
-        <h3>AOD New York<h3>
-        <h4>2250 Lexington Avenue<br>New York, NY 10035 -</h4>
-
-        <section class="connect_container">
-            <div class="connect_item">
-                <a href="https://twitter.com/">
-                    <img src="images/rs3" alt="twitter_logo" />
-                </a>
-            </div>
-            <div class="connect_item">
-                <a href="https://facebook.com/">
-                    <img src="images/rs2.png" alt="facebook_logo" />
-                </a>
-            </div>
-            <div class="connect_item">
-                <a href="https://pinterest.com/">
-                    <img src="images/rs1.png" alt="pinterest_logo" />
-                </a>
-            </div>
-        </section>
-
-        <h4>Handcrafted by</h4>
+    <!------------ FOOTER ------------>
+    <footer id="contact">
+        <p>AOD New York<br>2250 Lexington Avenue<br/>New Yrk, NY 10035 - <a href="mailto:info@domain.com">info@domain.com</a></p>
+        <div class="connect_container">
+            <a href="https://twitter.com/"><img src="./images/rs3.png" alt="twitter_logo" /></a>
+            <a href="https://facebook.com/"><img src="./images/rs2.png" alt="facebook_logo"></a>
+            <a href="https://pinterest.com/"><img src="./images/rs1.png" alt="pinterest_logo"></a>     
+        </div>
         <div class="footer_logo">
+            <p>Handcrafted by:</p>
             <a href="#">
-                <img src="" alt="yebo_logo" />
+                <img src="./images/Yebo-logo.png" alt="yebo_logo" />
             </a>
         </div>
     </footer>
-    
+    <!------------ END FOOTER ------------>
+
 </body>
 </html>
