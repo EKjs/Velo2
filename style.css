@@ -275,19 +275,25 @@ nav ul li a{
 }
 
 .discover-button{
-    border-color: rgb(255, 255, 255);
-    background-color: rgba(255, 255, 255, 0);
-    border-style: solid;
-    border-width: 1px;
+    background-color: rgb(40, 47, 53);
+    border: 1px solid white;
     width: 302px;
     height: 52px;
     font-size: 14px;
     font-family: "Lato";
-    color: rgb(255, 255, 255);
+    color: white;
     font-weight: bold;
     text-transform: uppercase;
     line-height: 1.2;
     margin: 70px auto;
+}
+
+.discover-button:hover{
+    background-color: darkslategrey;
+}
+
+.discover-button:active{
+    background-color: darkgray;
 }
 /* END DISCOVER button SECTION */
 
@@ -298,6 +304,7 @@ nav ul li a{
     display: flex;
     align-items: center;
     flex-direction: column;
+    padding: 5rem;
 }
 
 .eml-container{
@@ -306,27 +313,37 @@ nav ul li a{
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
-    flex-basis: 200px;
+    flex-basis: 250px;
 }
 
 #eml{
     font-style: italic;
     line-height: 1.2;
     width: 400px;
-    height: 50px;
-    font-size: 20px;
+    height: 70px;
+    font-size: 24px;
     font-family: "Lato";
-    color: rgba(146, 146, 146, 0.502);
+    color: rgba(146, 146, 146, 0.5);
     padding: 20px;
+    border: 1px solid rgba(146, 146, 146, 0.5);
 }
 
 #btnSubscribe {
     background-color: rgb(100, 194, 158);
     width: 126px;
-    height: 50px;
+    height: 70px;
     font-size: 24px;
     font-family: "Lato";
-    color: white
+    color: white;
+    border: 1px solid rgb(100, 194, 158);
+  }
+
+  #btnSubscribe:hover{
+    background-color: rgb(150, 210, 170);
+  }
+
+  #btnSubscribe:active{
+    background-color: rgb(160, 220, 180);
   }
   /* END EMAIL SECTION */
 
